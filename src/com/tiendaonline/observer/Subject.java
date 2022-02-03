@@ -6,14 +6,14 @@ import java.util.List;
 public class Subject {
 
     private List<Usuario> usuarios = new ArrayList<Usuario>();
-    private int estado;
+    private double dolarToday;
 
-    public int getEstado(){
-        return estado;
+    public double getDolarToday(){
+        return dolarToday;
     }
 
-    public void setEstado(int estado){
-        this.estado = estado;
+    public void setDolarToday(double dolarToday){
+        this.dolarToday = dolarToday;
         notificarUsuarios();
     }
 

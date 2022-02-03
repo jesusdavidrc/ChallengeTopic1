@@ -12,6 +12,8 @@ public class ProductoTwo extends Usuario{
 
     @Override
     public void actualizar() {
-        System.out.println(nombre+" Precio $: "+ (sujeto.getEstado() * precio));
+        double precioFinal = sujeto.getDolarToday() * precio;
+        precioFinal = Math.round(precioFinal * 100) / 100d;
+        System.out.println(nombre+" Precio $: "+ precioFinal +" Soles");
     }
 }

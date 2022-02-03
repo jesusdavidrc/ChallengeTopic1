@@ -14,9 +14,9 @@ public class Main {
         new ProductoThree(subject);
 
         System.out.println("Los precios actuales son:");
-        subject.setEstado(10);
+        subject.setDolarToday(4.1);
         System.out.println("--------------------------------");
         System.out.println("Los precios de ahora son:");
-        subject.setEstado(200);
+        subject.setDolarToday(3.30);
     }
 }
