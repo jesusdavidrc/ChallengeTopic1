@@ -17,8 +17,9 @@ public class Subject {
         notificarUsuarios();
     }
 
-    public void agregar(Usuario usuario){
+    public void agregar(Usuario usuario, String msg){
         usuarios.add(usuario);
+        System.out.println(msg);
     }
 
     public void notificarUsuarios(){

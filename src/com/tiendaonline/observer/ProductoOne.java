@@ -7,8 +7,9 @@ public class ProductoOne extends Usuario{
 
 
     public ProductoOne(Subject sujeto){
+        String msg = "Te has subscrito al producto "+ nombre;
         this.sujeto = sujeto;
-        this.sujeto.agregar(this);
+        this.sujeto.agregar(this, msg);
     }
 
     @Override

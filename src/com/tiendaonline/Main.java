@@ -9,14 +9,15 @@ public class Main {
     public static void main(String[] args) {
         Subject subject = new Subject();
 
-        new ProductoOne(subject);
-        new ProductoTwo(subject);
-        new ProductoThree(subject);
+        ProductoOne producto1 = new ProductoOne(subject);
+        ProductoTwo producto2 = new ProductoTwo(subject);
 
-        System.out.println("Los precios actuales son:");
+
+        System.out.println("\n Los precios actuales son:");
         subject.setDolarToday(4.1);
         System.out.println("--------------------------------");
         System.out.println("Los precios de ahora son:");
         subject.setDolarToday(3.30);
+
     }
 }

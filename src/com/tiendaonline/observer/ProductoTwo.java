@@ -6,8 +6,10 @@ public class ProductoTwo extends Usuario{
     private double precio = 412;
 
     public ProductoTwo(Subject sujeto){
+        String msg = "Te has subscrito al producto "+ nombre;
+
         this.sujeto = sujeto;
-        this.sujeto.agregar(this);
+        this.sujeto.agregar(this, msg);
     }
 
     @Override
